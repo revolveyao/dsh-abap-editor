@@ -1,0 +1,7 @@
+# pnpm 11 reads build-script approvals from here, not from package.json.
+# esbuild's postinstall only validates its platform binary, and that check
+# cannot run in this sandbox (it pipes the child's stdout, which is blocked) —
+# the binary itself works fine, so deny the script explicitly to keep
+# `pnpm install` clean. `pnpm build` runs esbuild's JS API directly.
+allowBuilds:
+  esbuild: false
