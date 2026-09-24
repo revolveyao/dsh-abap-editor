@@ -2,6 +2,14 @@
   "name": "dsh-abap-editor",
   "version": "0.2.0",
   "description": "ABAP syntax highlighting for the official DSH Sidebar document preview: a read-only CodeMirror 6 body with a vendored ABAP grammar for .abap files.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/revolveyao/dsh-abap-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/revolveyao/dsh-abap-editor/issues"
+  },
+  "homepage": "https://github.com/revolveyao/dsh-abap-editor#readme",
   "type": "module",
   "main": "lib/index.js",
   "exports": {

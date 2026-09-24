@@ -18,9 +18,10 @@
 ## 安装
 
 ```sh
-git clone <本仓库> && cd dsh-abap-editor
+git clone https://github.com/revolveyao/dsh-abap-editor.git C:\dsh-plugins\dsh-abap-editor
+cd C:\dsh-plugins\dsh-abap-editor
 pnpm install       # 仓库的 lock 是 pnpm 的；用 npm 也能装，只是 pnpm-workspace.yaml 的设置不生效
-dsh plugin --profile desktop add link:<本仓库路径>
+dsh plugin --profile desktop add link:C:\dsh-plugins\dsh-abap-editor
 ```
 
 `lib/` 已随仓库提交，所以只装来用的话**不需要先构建**；上面的 `install` 只有在你打算改
